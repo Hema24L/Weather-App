@@ -76,6 +76,11 @@ const apiKey = "YOUR_API_KEY";
 
 ### 📸 Screenshot
 
+![Weather App Screenshot](assets/images/page1.png)
+
+![Weather App Screenshot](assets/images/page2.png)
+
+![Weather App Screenshot](assets/images/page3.png)
 
 ---
 
