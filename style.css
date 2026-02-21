@@ -1,0 +1,130 @@
+html{
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/images/default.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+/* ============ */
+/* HEADING */
+/* ============ */
+.heading{
+    text-align: center;
+    margin-top: 40px;
+    transition: all 0.5s ease;
+}
+.heading.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+}
+/* ============ */
+/* SEARCH */
+/* ============ */
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 200px;
+    transition: 0.5s ease;
+}
+
+/* AFTER SEARCH */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-top: 0;
+}
+
+/* ============ */
+/* WEATHER BUTTON */
+/* ============ */
+.weather-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.weather-btn:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+}
+/* ============ */
+/* INPUT BOX */
+/* ============ */
+.input{
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+}
+/* ============ */
+/* WEATHER RESULT */
+/* ============ */
+
+.weather-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 0 auto; /* Center and push down */
+}
+#temperature{
+    font-size: 60px;
+}
+#description{
+    font-size: 40px;
+}
+/* WEATHER CARD */
+.weather-card {
+    display: none;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+/* TEMPERATURE FORECAST */
+.temperature-forecast {
+    display: none;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+    color: white;
+    text-align: center;
+}
+
+
+/* ============ */
+/* ERROR MESSAGE */
+/* ============ */
+#errorMessage{
+    text-align: center;
+    font-size: 40px;
+}
