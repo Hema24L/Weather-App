@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="home">
+        <h1 class="heading" id="app-heading">WEATHER APP</h1>
+        
+        <div class="search" id="search">
+            <input type="text" placeholder="Search city..." id="city-input" class="input">
+            <button class="weather-btn" id="city-btn">Get Weather</button>
+        </div>
+
+        <div class="weather-container">
+            <div class="weather-card">
+                <h2 id="City-desc"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+
+            <div class="temperature-forecast" id="temperatureForecast">
+                <canvas id="weatherChart"></canvas>
+            </div>
+        </div>
+
+        
+
+        <p id="errorMessage"></p>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
